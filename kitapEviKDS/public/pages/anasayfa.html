@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="../css/anasayfa.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+   <header>
+        <div class="header-top">
+            <div class="logo">
+                <a href="anasayfa.html">
+                    <img src="../images/dnrLogo.png" alt="avisLogo">
+                </a>
+            </div>
+            <div class="logout">
+                <a href="adminGiris.html">Çıkış Yap</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <ul class="navbar-items">
+            <a href="anasayfa.html">
+                <li class="navbar-item">Anasayfa</li>
+            </a>
+            <a href="subeler.html">
+                <li class="navbar-item">Şubeler</li>
+            </a>
+            <a href="karsilastirma.html">
+                <li class="navbar-item">Karşılaştırma</li>
+            </a>
+        </ul>
+    </div>
+    <main>
+        
+        <h2>Şubelerin 4 Yıllık Toplam Bilgileri</h2>
+        <div class="chart-container">
+            <canvas id="salesExpensesChart" class="chart"></canvas>
+            <canvas id="totalSalesChart" class="chart"></canvas>
+            <canvas id="mostProfitableChart" class="chart" ></canvas>
+            <canvas id="leastProfitableChart" class="chart" style="height: 162px"></canvas>
+        </div>
+
+        <div id="map-container">
+            <div id="population-map"></div>
+            <div id="map"></div>
+        </div>
+
+        <table id="branchesTable" border="1">
+            <thead>
+                <tr>
+                    <th>Şube Adı</th>
+                    <th>İlçe Adı</th>
+                </tr>
+            </thead>
+            <tbody>
+       
+            </tbody>
+        </table>
+    </main>
+
+    <script src="../js/anasayfa.js"></script>
+</body>
+
+</html>
